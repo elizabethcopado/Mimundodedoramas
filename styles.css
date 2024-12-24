@@ -1,0 +1,279 @@
+body {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#list-container {
+    max-height: 400px; /* El alto máximo del contenedor */
+    overflow-y: auto;  /* Permite desplazamiento cuando el contenido exceda el límite */
+    padding-right: 10px; /* Evitar que el scroll se superponga */
+    margin-top: 20px;
+}
+
+
+h1 {
+    color: #ffffff;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    margin-top: 50px;
+    background: linear-gradient(to right, #cf52f5, #f528c9);
+    margin: 20;
+    padding: 100;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+h2 {
+    color: #fad0c4;
+    text-align: center;
+    font-size: 24px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    margin: 10px 0;
+
+}
+a{
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: bold;
+}
+@keyframes slideIn {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h1{
+    animation: slideIn 1s ease-out;
+}
+button {
+    background-color: #ff6b81;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4757;
+    transform: scale(1.1);
+}
+nav {
+    background: #ff6b81;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fad0c4;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.card p {
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 0;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+
+#login-container img {
+    width: 120px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto 20px; 
+    border-radius: 50%;
+    border: 2px solid #ccc; 
+}
+
+#login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f10d92;
+    border-radius: 5px;
+}
+
+#login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fcfa78;
+    color: rgb(19, 18, 17);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#login-container button:hover {
+    background-color: #db598f;
+}
+/* Contenedor para los botones */
+.button-container {
+    display: flex; /* Usamos flexbox para alinear */
+    justify-content: center; /* Espacia los botones horizontalmente */
+    align-items: center; /* Alinea verticalmente los botones */
+    margin: 20px 0; 
+    
+}
+#showMoreKdramas {
+    margin-left: 20px;
+}
+
+#showMoreCdramas {
+    margin-left: 20px;
+}
+
+#showMoreDoramas {
+    margin-left: 20px;
+}
+
+
+/* Botones individuales (reutilizamos tu estilo base) */
+button {
+    background-color: #e2187d;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 12px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background-color: #3489c2;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#logoutButton {
+    margin-inline: 100px;
+    margin-left: 20px ;
+}
+
+#logoutButton {
+    background-color: #222; /* Color oscuro para cerrar sesión */
+    color: #fff; /* Texto blanco */
+}
+
+#logoutButton:hover {
+    background-color: #555; /* Gris en hover */
+}
+/* Fondo */
+body {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; /* Para que las mariposas no se salgan del viewport */
+}
+
+/* Estilo para las mariposas */
+.butterfly {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2917/2917999.png'); /* URL de la mariposa */
+    background-size: cover;
+    animation: float 10s infinite ease-in-out;
+    opacity: 0.8;
+}
+
+/* Animación de vuelo */
+@keyframes float {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-20px) translateY(-50px) rotate(-20deg);
+    }
+    50% {
+        transform: translateX(50px) translateY(0) rotate(20deg);
+    }
+    75% {
+        transform: translateX(-30px) translateY(30px) rotate(-10deg);
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+}
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+
+        
+    </head>
+
+
+<div id="login-container">
+    <h2>Iniciar Sesión </h2>
+    <div class="butterfly" style="top: 5%; left: 15%; animation-delay: 1s;"></div>
+    <div class="butterfly" style="top: 15%; left: 50%; animation-delay: 3s;"></div>
+    <div class="butterfly" style="top: 25%; left: 80%; animation-delay: 5s;"></div>
+    <div class="butterfly" style="top: 35%; left: 30%; animation-delay: 7s;"></div>
+    <div class="butterfly" style="top: 45%; left: 60%; animation-delay: 9s;"></div>
+    <div class="butterfly" style="top: 55%; left: 10%; animation-delay: 11s;"></div>
+    <div class="butterfly" style="top: 65%; left: 75%; animation-delay: 13s;"></div>
+    <div class="butterfly" style="top: 75%; left: 35%; animation-delay: 15s;"></div>
+    <div class="butterfly" style="top: 85%; left: 50%; animation-delay: 17s;"></div>
+    <div class="butterfly" style="top: 95%; left: 5%; animation-delay: 19s;"></div>
+    <div class="butterfly" style="top: 90%; left: 90%; animation-delay: 20s;"></div>
+
+    
+
+
+    <div class="card">
+        <img src = "https://static.vecteezy.com/system/resources/previews/003/430/186/original/cute-white-cat-cartoon-illustration-vector.jpg" >
+    <form id="login-form">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" placeholder=" " required>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder=" " required>
+        
+        <button type="submit">Ingresar 🔓</button>
+    </form>
+    <p id="login-error" style="color: red; display: none;">Usuario o contraseña incorrectos</p>
+    </div>
+</div>
+<script>
+    // se definen usuarios 
+    const users = [
+        { username: "PANQUESITO", password: "12092021" },
+        { username: "admin", password: "12345" }
+    ];
+
+    // Escuchar el evento submit del formulario
+    document.getElementById("login-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Evitar que recargue la página
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Verificar si el usuario existe
+        const user = users.find(u => u.username === username && u.password === password);
+
+        if (user) {
+            alert("¡Bienvenido, " + username + "!");
+            // Redireccionar a la sección de doramas
+            window.location.href = "index.html";
+        } else {
+            // Mostrar mensaje de error
+            document.getElementById("login-error").style.display = "block";
+        }
+        
+    });
+</script>
+
+</html> 
